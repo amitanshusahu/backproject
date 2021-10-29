@@ -22,7 +22,7 @@ app.use('/', express.static("public"))
 const mongoose = require("mongoose")
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect(process.env.MONGODB_URI,{
+  await mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://amitanshuAdmin:idkpassword@cluster0.9vqxf.mongodb.net/medketsBooking?retryWrites=true&w=majority" ,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
