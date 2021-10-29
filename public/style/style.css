@@ -1,0 +1,119 @@
+@import url(utilities.css);
+header .Slides{
+    display: none;
+    animation: fade 0.5s ease 1;
+}
+header .Slides img{
+    width: 100vw;
+    height: 500px;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+main {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.bookTickets{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.bookTickets h1{
+    font-size: 40px;
+    margin: 10px;
+}
+.bookTickets .ActionTextHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.bookTickets .ActionTextHolder q{
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+.content_H{
+    margin-top: 50px;
+    overflow: hidden;
+}
+.content_H .heading{
+   display: flex;
+   justify-content: space-between;
+}
+.content_H .cardholder_H{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.content_H .cardholder_H .products_card_l{
+    margin: 20px;
+    background-color: white;
+    border: 1px solid var(--primary200);
+    border-radius: 10px;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.082));
+    height: 300px;
+}
+.content_H .cardholder_H .products_card_l:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.205));
+    transform: translateY(-5px);
+}
+.content_H .cardholder_H img{
+    height: 250px;
+}
+.articleHolder{
+    display: flex;
+    min-width: 500px;
+    background-color: white;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.082));
+    height: 300px;
+    border: 1px solid var(--primary200);
+    border-radius: 10px;
+    margin: 20px;
+}
+.articleHolder hr{
+    margin: 10px;
+}
+.articleHolder:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.205));
+    transform: translateY(-5px);
+}
+.articleHolder .artimg img{
+    width: 250px;
+    height: 250px;
+}
+footer{
+    background: rgb(172,255,183);
+    background: linear-gradient(140deg, rgba(172,255,183,1) 75%, rgba(233,255,173,1) 100%);
+}
+footer .container{
+    display: flex;
+}
+footer .container hr{
+    margin: 20px;   
+}
+footer .container .sponsers{
+    margin: 20px;   
+    width: 50vw;
+}
+.spimg{
+    margin-top: 20px;
+    display: flex;
+    width: 49vw;
+    justify-content: space-evenly;
+}
+footer .container .reachUs{
+    margin: 20px;
+    width: 50vw;   
+}

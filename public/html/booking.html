@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book tickets</title>
+    <link rel="stylesheet" href="../style/booking.css">
+</head>
+<body>
+    <div class="bookingContainer">
+        <div class="bkimage">
+            <!-- <h1>Stop Standing In That <br> Long Slow Line</h1>
+            <br>
+            <h2>SAVE TIME,</h2> <br>
+            <q>TIME IS MONEY</q> -->
+        </div>
+        <div class="bkdetails">
+            <form action="/booktickets" method="post">
+                <div class="data"> <b>Name:</b> <input type="text" name="name" id="name" placeholder="Your Full Name" required ></div>
+                <div class="data"> <b>Adhar:</b> <input type="number" name="adhar" id="adhar" placeholder="Your Adhar Card Number" required></div>
+                <div class="data"> <b>Phone:</b> <input type="number" name="phone" id="phone" placeholder="Your Valid Mobile Number" required></div>
+                <div class="data">
+                    <b>Hospital:</b>
+                    <select name="hospitals" id="hospitals" required>
+                    <option value="hospital">--Select Hospitals--</option>
+                    <option value="Sunil Agrawal Private Clinic, odisha, berhumpur , komapuli">Sunil Agrawal Private Clinic, odisha, berhumpur , komapuli</option>
+                    <option value="City hospital, odisha , berhumpur, kamapuli">City hospital, odisha , berhumpur, kamapuli</option>
+                    <option value="Candrika hospital , odisha, noda">Candrika hospital , odisha, noda</option>
+                    </select>
+                </div>
+                <div class="submitData"><input type="submit" value="Book"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

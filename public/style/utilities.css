@@ -1,0 +1,124 @@
+:root{
+    --primary600: #82fd93;
+    --primary500: #acffb7;
+    /* --primary500: #8af633; */
+    --primary200: #e5ffda;
+    --primary100: #ecffe4;
+    --secondary500: #004DFF;
+    --pop:#FF004D;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--primary100);
+}
+button{
+    border: 1px solid var(--secondary500);
+    background-color: var(--secondary500);
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    margin: 10px;
+}
+button :hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.menuModal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.658);
+    z-index: 1000;
+    display: none;
+    justify-content: right;
+}
+.menuModal .menu{
+    height: 100vh;
+    width: 300px;
+    background-color: var(--primary200);
+}
+.closeMenu{
+    width: 280px;
+    text-align: right;
+    margin-top: 25px;
+}
+.closeMenu img{
+    width: 24px;
+}
+.searchbox{
+    margin: 30px;
+}
+.searchbox #search{
+    padding: 7px;
+    padding-left: 10px;
+    border: 2px solid  var(--primary600);
+}
+.searchbox #searbtn{
+    margin-left: -5px;
+    padding: 7px;
+    background-color: var(--primary600);
+    border: 2px solid  var(--primary600);
+}
+.topNav{
+    height: 80px;
+    width: 100%;
+    background-color: var(--primary500);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 900;
+    align-items: center;
+    overflow: hidden ;
+}
+.topNav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.topNav ul li{
+    list-style: none;
+    margin: auto;
+    margin-right: 40px;
+}
+.logoholder{
+    margin-left: 20px;
+}
+.logoholder img{
+    width: 6rem;
+    height: 6rem;
+}
+.searchHolder #search{
+    padding: 10px;
+    padding-right: 20px;
+    width: 34vw;
+    border: 2px solid var(--primary600);
+}
+.searchHolder .submit{
+    padding: 10px;
+    margin-left: -20px;
+    background-color: var(--primary600);
+    border: 2px solid  var(--primary600);
+}
+.subNav {
+    padding-top: 80px;
+    height: 55px;
+    width: 100%;
+    background-color: white;
+    /* background-color: var(--primary200); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subNav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.subNav ul li{
+    list-style-type: none;
+    margin-right: 10px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "medkets",
+  "version": "1.0.0",
+  "description": "this is a startup idea by abhijeet , and also my 1st full stack web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Amitanshu sahu",
+  "license": "ISC",
+  "engines": {
+    "node": "10.x"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "pug": "^3.0.2"
+  }
+}

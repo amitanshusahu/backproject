@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bookingContainer{
+    display: flex;
+}
+.bkimage{
+    background-image: url(../img/utilities/line.jpg);
+    background-attachment: cover;
+    height: 100vh;
+    width: 45vw;
+    background-repeat: no-repeat;
+    background-position: bottom ;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+/* .bkimage q{
+    font-size: 60px;
+}
+.bkimage h1{
+    margin: 30px;
+} */
+.bkdetails{
+    background-color: #ecffe4;
+    min-width: 55vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.data{
+    margin:20px;
+    font-size: 30px;
+}
+.data input{
+    width: 30vw;
+    padding: 10px;
+}
+.submitData{
+    margin: 20px;
+    width: 30vw;
+    text-align: right;
+}
+.data select {
+    width: 30vw;
+    padding: 10px;
+}
+.submitData input{
+    border: 1px solid #004DFF;
+    background-color: #004DFF;
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+}
