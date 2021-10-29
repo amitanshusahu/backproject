@@ -18,6 +18,16 @@ app.set("views" , path.join(__dirname+"/views"))
 app.use('/', express.static("public"))
 
 
+// MONGOOSE SETUP
+const mongoose = require("mongoose")
+const MONGODB_URI = `mongodb+srv://amitanshuAdmin:idkpassword@cluster0.9vqxf.mongodb.net/medketsBooking?retryWrites=true&w=majority`
+main().catch(err => console.log(err));
+async function main() {
+  await mongoose.connect(MONGODB_URI,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+}
 
 app.get("/", (req,res) =>{
     res.sendFile(path.join(__dirname, "public" , "html/index.html"))
