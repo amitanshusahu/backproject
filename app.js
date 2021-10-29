@@ -22,7 +22,7 @@ app.use('/', express.static("public"))
 const mongoose = require("mongoose")
 main().catch(err => console.log(err));
 async function main() {
-  await mongoose.connect(MONGODB_URI,{
+  await mongoose.connect(process.env.MONGODB_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
