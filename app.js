@@ -18,15 +18,15 @@ app.set("views" , path.join(__dirname+"/views"))
 app.use('/', express.static("public"))
 
 
-// MONGOOSE SETUP
-const mongoose = require("mongoose")
-main().catch(err => console.log(err));
-async function main() {
-  await mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://amitanshuAdmin:idkpassword@cluster0.9vqxf.mongodb.net/medketsBooking?retryWrites=true&w=majority" ,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-}
+// // MONGOOSE SETUP
+// const mongoose = require("mongoose")
+// main().catch(err => console.log(err));
+// async function main() {
+//   await mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://amitanshuAdmin:idkpassword@cluster0.9vqxf.mongodb.net/medketsBooking?retryWrites=true&w=majority" ,{
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// });
+// }
 
 app.get("/", (req,res) =>{
     res.sendFile(path.join(__dirname, "public" , "html/index.html"))
